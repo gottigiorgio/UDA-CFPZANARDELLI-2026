@@ -24,13 +24,7 @@ def addOperatore():
         operatore = Operatori(
             nome=request.form["nome"],
             cognome=request.form["cognome"],
-            settore=request.form["settore"],
-            regione=request.form["regione"],
-            indirizzo=request.form["indirizzo"],
-            email=request.form["email"],
-            telefono=request.form["telefono"],
-            nome_utente=request.form["nome_utente"],
-            richieste=0
+            data_assunzione=request.form["data_assunzione"],
         )
 
         db.session.add(operatore)
@@ -46,12 +40,7 @@ def editOperatore(id):
     if request.method == "POST":
         operatore.nome = request.form["nome"]
         operatore.cognome = request.form["cognome"]
-        operatore.settore = request.form["settore"]
-        operatore.regione = request.form["regione"]
-        operatore.indirizzo = request.form["indirizzo"]
-        operatore.email = request.form["email"]
-        operatore.telefono = request.form["telefono"]
-        operatore.nome_utente = request.form["nome_utente"]
+        operatore.data_assunzione=request.form["data_assunzione"],
 
         db.session.commit()
         return redirect(url_for("operatori.listOperatori"))
