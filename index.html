@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3; url=https://github.com/gottigiorgio/UDA-CFPZANARDELLI-2026">
+    <meta http-equiv="refresh" content="5; url=https://github.com/gottigiorgio/UDA-CFPZANARDELLI-2026">
     <link rel="canonical" href="https://github.com/gottigiorgio/UDA-CFPZANARDELLI-2026">
     <title>Reindirizzamento in corso...</title>
     <style>
@@ -44,7 +44,7 @@
         .redirect-icon {
             font-size: 4em;
             margin-bottom: 30px;
-            animation: spin 2s linear infinite;
+            animation: spin 5s linear infinite;
         }
 
         @keyframes spin {
@@ -101,13 +101,22 @@
         }
 
         footer {
+            text-align: center;
             margin-top: 40px;
             padding-top: 20px;
             border-top: 2px solid #eee;
-            color: #999;
-            font-size: 0.9em;
+            color: #666;
         }
 
+        footer a {
+            display: inline;
+            background: none;
+            color: #667eea;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            text-decoration: underline;
+        }
         .progress-bar {
             width: 100%;
             height: 4px;
@@ -120,7 +129,7 @@
         .progress-bar-fill {
             height: 100%;
             background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            animation: progress 3s linear forwards;
+            animation: progress 5s linear forwards;
         }
 
         @keyframes progress {
@@ -149,10 +158,8 @@
         
         <h1>Reindirizzamento in corso...</h1>
         
-        <p>Verrai reindirizzato automaticamente alla repository GitHub</p>
-        
         <div class="countdown">
-            Reindirizzamento tra <span id="counter">3</span> secondi
+            Verrai reindirizzato automaticamente tra <span id="counter">5</span> secondi
         </div>
 
         <div class="progress-bar">
@@ -170,14 +177,17 @@
             </p>
         </div>
 
-        <footer>
-            <p>© 2026 - Gotti's Development Program</p>
+        <footer id="footer" class="">
+            &copy;2026-2027 -
+            <a href="https://github.com/gottigiorgio-development-program">
+                Gotti's Development Program
+            </a>
         </footer>
     </div>
 
     <script>
         // Countdown timer
-        let seconds = 3;
+        let seconds = 5;
         const counterElement = document.getElementById('counter');
         
         const countdown = setInterval(() => {
